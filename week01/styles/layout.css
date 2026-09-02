@@ -45,7 +45,7 @@ body .header-content {
 .parent {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 75px 40px 1fr 125px;
+  grid-template-rows: 75px 40px 359px 125px;
   grid-template-areas: 
   "header header"
   "nav nav"

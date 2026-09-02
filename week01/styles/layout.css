@@ -63,10 +63,12 @@ body .header-content {
 }
 
 .main-content {
+  padding: 10px;
   grid-area: main;
 }
 
 .aside-content {
+  padding: 10px;
   grid-area: aside;
 }
 

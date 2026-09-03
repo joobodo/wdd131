@@ -1,0 +1,14 @@
+/* 
+Color Scheme:
+
+- Primary Deep Blue (Headers & Footers): #002E5D (BYU-I institutional Navy)
+- Accent Teal (Hover States & Borders): #00A3A6 (Fresh, energetic tech teal)
+- Neutral Light (Page Background): #F4F6F9 (Soft, clean light grey)
+- Text Color (Dark Charcoal); #111827
+*/
+
+/* ================= Body Styles ================= */
+body {
+  background-color: #F4F6F9;
+  box-sizing: border-box;
+}

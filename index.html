@@ -13,16 +13,16 @@
     <!-- Preconnect Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Momo+Trust+Display&display=swap" rel="stylesheet">
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="styles/base.css">
   </head>
 
   <body>
     <div class="parent">
       <!-- Header Elements -->
-      <header class="header-content darkgrey section">
+      <header class="header-content">
         <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
       </header>
 
@@ -35,31 +35,58 @@
           <li><a href="#" title="Final Project">Final Project</a></li>
         </ul>
       </nav>
-      
-      <!-- Main Content -->
-      <main class="main-content grey section" contenteditable>
-        <h1>Joshua O. Obodo</h1>
-        <section class="card">
-          <h1>Section 1</h1>
-          <p></p>
-          <img src="#" alt="#">
-        </section>
 
-        <section class="card">
-          <h1>Section 2</h1>
-          <p></p>
-          <img src="#" alt="#">
-        </section>
+      <!-- Main Content -->
+      <main class="main-content">
+
+        <h1>Joshua O. Obodo</h1>
+    
+        <div class="cards">
+            <section class="card">
+              <h2>About Me</h2>
+              <div class="about-content">
+                  <p>
+                      My name is Joshua and I go by Josh. I was born in Nigeria and live with my family in Ogun state.
+                      I am currently working as a bookkeeper at a service-rendering company, <i><a href="https://afrisourcehub.com" title="AfrisourceHub official webpage">AfrisourceHub</a></i>. I love to spend time
+                      playing video games and listening to music. I also enjoy spending time with family and friends, most especially
+                      church members. My hobbies are reading, gaming and listening to music.
+                  </p>
+                  <img src="images/me2.jpg" alt="Joshua O. Obodo" width="1" height="2">
+                  <div class="location-content">
+                    <h3>Ogun State, Nigeria</h3>
+                    <div class="location-info">
+                      <div class="flag-info">
+                        <img src="images/flag_of_nigeria.jpg" alt="Official Flag of Nigeria">
+                        <em>Official Flag of Nigeria</em>
+                      </div>
+                      <p>
+                        Ogun State is a state in southwestern Nigeria, known for its rich cultural heritage, 
+                        growing industries, and historical landmarks.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+          </section>
+    
+          <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="aside-content">
+              <ul>
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Lorem Piscum Image Placeholder</a></li>
+              </ul>
+            </div>
+          </section> 
+        </div>
       </main>
       
-      <!-- Aside Content -->
-      <div class="aside-content white section" contenteditable>
-        Aside Content
-      </div>
-      
       <!-- Footer Elements -->
-      <footer class="footer-content darkgrey section">
-        <p>copyright symbol<span id="currentyear"></span> || Joshua O. Obodo || Nigeria</p>
+      <footer class="footer-content">
+        <p>&#169; <span id="currentyear"></span> || Joshua O. Obodo || Nigeria</p>
         <p id="lastModified"></p>
       </footer>
     </div>

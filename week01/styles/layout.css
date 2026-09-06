@@ -8,7 +8,14 @@ body {
 }
 
 body .header-content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
   background: #272727;
+}
+
+body .course-title {
   color: #ffffff;
 }
 
@@ -49,6 +56,7 @@ body .header-content {
   grid-template-rows: 75px 40px 359px 125px;
   grid-template-areas: 
   "header header"
+  "name name"
   "nav nav"
   "main aside"
   "footer footer";
@@ -60,6 +68,10 @@ body .header-content {
 
 .navigation {
   grid-area: nav;
+}
+
+.name-content {
+  grid-area: name;
 }
 
 .main-content {

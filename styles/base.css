@@ -1,7 +1,7 @@
 /* 
 Color Scheme:
 
-- Primary Deep Blue (Headers & Footers): #002E5D (BYU-I institutional Navy)
+- Primary Deep Blue (Headers & Footers): C (BYU-I institutional Navy)
 - Accent Teal (Hover States & Borders): #00A3A6 (Fresh, energetic tech teal)
 - Neutral Light (Page Background): #F4F6F9 (Soft, clean light grey)
 - Text Color (Dark Charcoal); #111827
@@ -33,7 +33,7 @@ p {
   margin: auto 100px;
 
   grid-template-columns: 1fr;
-  grid-template-rows: 75px 40px auto 125px;
+  grid-template-rows: 75px 40px auto 75px;
 
   grid-template-areas:
       "header"
@@ -128,7 +128,7 @@ header span {
 /* ================= Aside Content ================= */
 
 .aside-content {
-  padding: 115px 50px;
+  padding: 97px 50px;
   grid-area: aside;
   align-items: center;
   border: solid 1px #ddd;
@@ -136,10 +136,20 @@ header span {
   border-bottom-right-radius: 11px;
 }
 
+.aside-content li {
+  font-size: 1.3rem;
+}
+
+.aside-content li a:hover {
+  color: #ccc;
+}
+
 /* ================= Footer Content ================= */
 
 .footer-content {
   grid-area: footer;
+  background-color: #002E5D;
+  color: #F4F6F9;
   text-align: center;
 }
 

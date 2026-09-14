@@ -1,0 +1,8 @@
+@media (min-width: 600px) {
+  nav ul {
+    flex-direction: row; /* TODO: side-by-side nav on larger screens */
+  }
+  main {
+    /* TODO: grid-template-columns: repeat(3, 1fr); or auto-fit/minmax version */
+  }
+}

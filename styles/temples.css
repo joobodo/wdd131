@@ -27,23 +27,57 @@ h1 {
   font-style: italic;
 }
 
+header span {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+/* Claude helped me :) */
+header:has(#nav-menu:not(.hidden)) .site-title {
+  display: none;
+}
+
+
 header {
   display: grid;
   grid-template-columns: auto 44px;
+  grid-template-areas:
+    "title btn"
+    "nav   nav";
   background-color: #3A5046;
   color: #F8F6F2;
+  padding: 2rem;
+}
+
+.site-title {
+  grid-area: title;
+}
+
+#menu-btn {
+  grid-area: btn;
+}
+
+nav {
+  grid-area: nav;
 }
 
 nav ul {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+}
+
+nav li {
+  padding: 10px 0;
 }
 
 nav a {
   color: #F8F6F2;
+  font-size: 1.2rem;
+  font-weight: 800;
   text-decoration: none;
 }
 
@@ -55,23 +89,44 @@ main {
   max-width: 900px;
   margin: 0 auto;
   padding: 1rem;
-}
-
-main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+}
+
+main h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  padding: 10px;
 }
 
 .hidden {
   display: none;
 }
 
-.hamburger-btn {
-  display: block; /* only shows in mobile, hidden in temples-large.css */
+#menu-btn {
+  display: block;
   background: none;
   border: none;
   font-size: 1.5rem;
   color: #F8F6F2;
   cursor: pointer;
+}
+
+figcaption {
+  font-weight: 200;
+  text-align: center;
+}
+
+footer {
+  background-color: #3A5046;
+  padding: 8px;
+  color: #F4F6F9;
+  text-align: center;
 }

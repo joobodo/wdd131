@@ -1,0 +1,77 @@
+/* 
+Color Scheme:
+
+* Primary Accent: #3A5046 (Deep Jade Green) — For headers, main brand elements, and calm authority.
+* Secondary Accent: #C89F65 (Muted Sand Gold) — For call-to-action buttons, active links, and highlights.
+* Background (Light): #F8F6F2 (Soft Alabaster) — Replaces stark white with a warm, natural linen tone.
+* Background (Dark/Cards): #2A3430 (Forest Slate) — For the footer or high-contrast announcement sections.
+* Text/Body: #2D2D2D (Charcoal) — For highly readable, accessible typography.
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Liter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #F8F6F2;
+  color: #2D2D2D;
+}
+
+h1 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 44px;
+  background-color: #3A5046;
+  color: #F8F6F2;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #F8F6F2;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #C89F65;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.hamburger-btn {
+  display: block; /* only shows in mobile, hidden in temples-large.css */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #F8F6F2;
+  cursor: pointer;
+}

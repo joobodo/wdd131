@@ -53,10 +53,6 @@ header {
   grid-area: title;
 }
 
-#menu-btn {
-  grid-area: btn;
-}
-
 nav {
   grid-area: nav;
 }
@@ -111,6 +107,7 @@ img {
 }
 
 #menu-btn {
+  grid-area: btn;
   display: block;
   background: none;
   border: none;

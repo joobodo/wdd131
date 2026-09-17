@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background-color: #eef3f5;
+}
+
+header,
+main,
+footer {
+  max-width: 1500px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+header {
+  color: #fff;
+  background-color: #244b5a;
+}
+
+header h1,
+footer p {
+  margin: 0;
+}
+
+.hero {
+  overflow: hidden;
+  background-color: #d8e2e6;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: left;
+}
